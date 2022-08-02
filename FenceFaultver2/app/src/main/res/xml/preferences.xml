@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference android:title="GSM module numbers"
+        android:summary="Add or Change GSM Module number"
+        android:key="prefGSM"/>
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@android:array/phoneTypes"
+        android:entryValues="@android:array/phoneTypes"
+        android:key="list_preference_1"
+        android:title="List preference" />
+    <SwitchPreference android:title="Receive All Notifications"
+        android:summary="Toggle switch on to receive node working notifications as well"
+        android:key="prefNoti"/>
+</PreferenceScreen>
